@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comic extends Model
 {
+    protected $guarded =['_token', '_put'];
     use HasFactory;
 }

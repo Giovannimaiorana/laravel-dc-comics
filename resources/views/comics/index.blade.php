@@ -21,6 +21,7 @@
         </ul>
         <div class="card-body">
           <a href="{{route('comics.show', ['comic'=>$comic->id])}}" class="btn btn-primary">see</a>
+          <a href="{{route('comics.edit',['comic' => $comic->id])}}" class="btn btn-warning mx-2">Modifica</a>
     
         </div>
       </div>

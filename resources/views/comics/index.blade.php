@@ -22,7 +22,12 @@
         <div class="card-body">
           <a href="{{route('comics.show', ['comic'=>$comic->id])}}" class="btn btn-primary">see</a>
           <a href="{{route('comics.edit',['comic' => $comic->id])}}" class="btn btn-warning mx-2">Modifica</a>
-    
+           <form action="{{ route('comics.destroy', ['comic'=> $comic->id]) }}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button class="btn btn-danger mt-3" type="submit"> elimina</button>
+           
+          </form>
         </div>
       </div>
     @endforeach

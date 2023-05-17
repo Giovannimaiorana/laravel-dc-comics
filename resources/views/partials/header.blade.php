@@ -9,7 +9,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="{{ route('comics.index') }}">Film</a>
+                <a class="nav-link" href="{{ route('comics.index') }}">fumetti</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="">cc</a>
